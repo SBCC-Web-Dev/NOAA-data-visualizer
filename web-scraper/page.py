@@ -4,7 +4,7 @@ import time
 from bs4 import BeautifulSoup
 
 class Page:
-    def __init__(self, base_url: str, rel_url: str, crawl_deeper=False, visited=None, delay=1.0):
+    def __init__(self, base_url: str, rel_url: str, crawl_deeper=True, visited=None, delay=1.0):
         self.base_url = base_url
         self.rel_url = rel_url
         self.errors: list[str] = []
