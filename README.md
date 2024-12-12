@@ -1,4 +1,4 @@
-# NOAA Web Crawler
+# NOAA Data Visualizer
 
 ![Screenshot from app][logo]
 
@@ -12,8 +12,8 @@ This dataset collected data from thousands of folders containing ~1 million imag
 
 To run the code first run:
 ```bash
-git clone https://github.com/SBCC-Web-Dev/noaa-crawler.git
-cd noaa-crawler
+git clone https://github.com/SBCC-Web-Dev/NOAA-data-visualizer.git
+cd NOAA-data-visualizer
 pip install -r requirements.txt
 ```
 Optionally you can run the web scraper:
