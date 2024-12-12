@@ -19,4 +19,4 @@ app.layout = html.Div([
 )
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=False, use_reloader=False, port=8050, dev_tools_silence_routes_logging=True)
