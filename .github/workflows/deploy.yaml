@@ -23,15 +23,16 @@ jobs:
     - name: Set Up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: 3.13
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Build Dash App
       run: |
-        mkdir build
+        mkdir -p build
         python app.py &
+        sleep 10
         wget -r -np -N -E -p -k http://127.0.0.1:8050 -P build
   deploy:
     runs-on: ubuntu-latest
